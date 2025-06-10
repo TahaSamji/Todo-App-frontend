@@ -14,7 +14,7 @@ ENV REACT_APP_API_URL=$REACT_APP_API_URL
 COPY package*.json ./
 
 # Install dependencies
-RUN npm ci --only=production
+RUN npm install
 
 # Copy source code
 COPY . .
